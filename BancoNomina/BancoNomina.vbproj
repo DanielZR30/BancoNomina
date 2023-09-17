@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F249B0C-7D1C-43CC-900E-C10620471DAF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BancoNomina.My.MyApplication</StartupObject>
+    <RootNamespace>BancoNomina</RootNamespace>
+    <AssemblyName>BancoNomina</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BancoNomina.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BancoNomina.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualizarAnexo.Designer.vb">
+      <DependentUpon>ActualizarAnexo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarAnexo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarComunicados.Designer.vb">
+      <DependentUpon>ActualizarComunicados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarComunicados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarContrato.Designer.vb">
+      <DependentUpon>ActualizarContrato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarContrato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarDatosPersonales.Designer.vb">
+      <DependentUpon>ActualizarDatosPersonales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarDatosPersonales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarCertificadoLaboral.Designer.vb">
+      <DependentUpon>ActualizarCertificadoLaboral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarCertificadoLaboral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjustesPredeterminados.Designer.vb">
+      <DependentUpon>AjustesPredeterminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AjustesPredeterminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conexion.vb" />
+    <Compile Include="Exportar.Designer.vb">
+      <DependentUpon>Exportar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exportar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HojaVida.Designer.vb">
+      <DependentUpon>HojaVida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HojaVida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HorasExtras.Designer.vb">
+      <DependentUpon>HorasExtras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HorasExtras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir.Designer.vb">
+      <DependentUpon>Imprimir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Incapacidades.Designer.vb">
+      <DependentUpon>Incapacidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Incapacidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menum.Designer.vb">
+      <DependentUpon>menum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Nomina.Designer.vb">
+      <DependentUpon>Nomina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nomina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamo.Designer.vb">
+      <DependentUpon>Prestamo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recargos.Designer.vb">
+      <DependentUpon>Recargos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Recargos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecuperarContrasena.Designer.vb">
+      <DependentUpon>RecuperarContrasena.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecuperarContrasena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrarme.Designer.vb">
+      <DependentUpon>Registrarme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registrarme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ActualizarAnexo.resx">
+      <DependentUpon>ActualizarAnexo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarComunicados.resx">
+      <DependentUpon>ActualizarComunicados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarContrato.resx">
+      <DependentUpon>ActualizarContrato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarDatosPersonales.resx">
+      <DependentUpon>ActualizarDatosPersonales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarCertificadoLaboral.resx">
+      <DependentUpon>ActualizarCertificadoLaboral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjustesPredeterminados.resx">
+      <DependentUpon>AjustesPredeterminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exportar.resx">
+      <DependentUpon>Exportar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HojaVida.resx">
+      <DependentUpon>HojaVida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HorasExtras.resx">
+      <DependentUpon>HorasExtras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir.resx">
+      <DependentUpon>Imprimir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Incapacidades.resx">
+      <DependentUpon>Incapacidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menum.resx">
+      <DependentUpon>menum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nomina.resx">
+      <DependentUpon>Nomina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamo.resx">
+      <DependentUpon>Prestamo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recargos.resx">
+      <DependentUpon>Recargos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecuperarContrasena.resx">
+      <DependentUpon>RecuperarContrasena.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrarme.resx">
+      <DependentUpon>Registrarme.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carpeta.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caepeta1.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
